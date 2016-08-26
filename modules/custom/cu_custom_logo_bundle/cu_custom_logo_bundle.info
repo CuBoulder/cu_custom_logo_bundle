@@ -1,0 +1,4 @@
+name = CU Custom Logo Bundle
+core = 7.x
+
+dependencies[] = cu_custom_logo
