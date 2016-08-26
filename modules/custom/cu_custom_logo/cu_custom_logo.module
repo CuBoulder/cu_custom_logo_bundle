@@ -39,7 +39,7 @@ function cu_custom_logo_upload_form($form, &$form_state) {
     '#type' => 'checkbox',
     '#name' => 'custom_logo_retina',
     '#title' => 'Retina Images',
-    '#description' => 'Check this if the images should be treated as retina images',
+    '#description' => 'Display as retina images.',
     '#default_value' => variable_get('custom_logo_retina', 0),
   );
   //$form = system_settings_form($form);
