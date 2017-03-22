@@ -1,4 +1,7 @@
 name = CU Custom Logo Bundle
 core = 7.x
+version = 1.0
+project = cu_custom_logo_bundle
+project status url = https://github.com/CuBoulder/cu_custom_logo_bundle
 
 dependencies[] = cu_custom_logo
