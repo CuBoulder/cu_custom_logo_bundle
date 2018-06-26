@@ -65,8 +65,8 @@ function cu_custom_logo_upload_form_submit($form, &$form_state) {
   // White logo upload.
   elseif (isset($form_state['values']['custom_white_logo'])) {
     $white_file = file_load($form_state['values']['custom_white_logo']);
-    //$white_file->status = FILE_STATUS_PERMANENT;
-    //file_save($white_file);
+    $white_file->status = FILE_STATUS_PERMANENT;
+    file_save($white_file);
     file_usage_add($white_file, 'cu_custom_logo', 'white_logo', 1, 1);
     variable_set('custom_white_logo', $form_state['values']['custom_white_logo']);
   }
@@ -83,8 +83,8 @@ function cu_custom_logo_upload_form_submit($form, &$form_state) {
   // Black logo upload.
   elseif (isset($form_state['values']['custom_black_logo'])) {
     $black_file = file_load($form_state['values']['custom_black_logo']);
-    //$black_file->status = FILE_STATUS_PERMANENT;
-    //file_save($black_file);
+    $black_file->status = FILE_STATUS_PERMANENT;
+    file_save($black_file);
     file_usage_add($black_file, 'cu_custom_logo', 'black_logo', 1, 1);
     variable_set('custom_black_logo', $form_state['values']['custom_black_logo']);
   }
