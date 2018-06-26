@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Add custom logos to file_managed table.
+ */
+function cu_custom_logo_update_7001() {
+  if ($white_logo = variable_get('custom_white_logo', NULL)) {
+    $white_file = file_load($white_logo);
+    $white_file->status = FILE_STATUS_PERMANENT;
+    file_save($white_file);
+  }
+  if ($black_logo = variable_get('custom_black_logo', NULL)) {
+    $black_file = file_load($black_logo);
+    $black_file->status = FILE_STATUS_PERMANENT;
+    file_save($black_file);
+  }
+}
